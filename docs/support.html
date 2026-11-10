@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Pigeon</title>
+<meta name="description" content="Help with Pigeon, the Mac email app for Gmail.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="site.css">
+<!-- Google Search Console verification: paste the <meta name="google-site-verification" ...> tag here -->
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Pigeon</a>
+  <nav><a href="index.html#features">Features</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+</header>
+<article class="doc">
+<h1>Support</h1>
+<p>Questions, problems or ideas? Open an issue on <a href="https://github.com/tahirjaved1/pigeon/issues">GitHub</a> and include your macOS version and Pigeon version (Pigeon → About Pigeon). Issues are public, so never paste anything private from your mail.</p>
+<h2>Installing</h2>
+<p>With Homebrew: <code>brew install --cask tahirjaved1/pigeon/pigeon</code>. Or download <a href="https://github.com/tahirjaved1/pigeon/releases/latest/download/Pigeon.dmg">Pigeon.dmg</a>. The first time, macOS asks you to allow it: System Settings → Privacy &amp; Security → <b>Open Anyway</b>.</p>
+<p>After an update, macOS may ask once whether Pigeon may use its saved sign-in in your Keychain: choose <b>Always Allow</b>.</p>
+<h2>Signing in</h2>
+<p><b>Sign in with Google</b> opens Google's sign-in page in your browser; approve there and Pigeon opens your mail. If your organisation blocks third-party apps, ask your administrator, or use an app password: Google Account → Security → 2-Step Verification → App passwords.</p>
+<h2>AI help</h2>
+<p>Turn it on in Settings → AI help. For AI that stays on your Mac, install <a href="https://ollama.com">Ollama</a> and run <code>ollama pull llama3.2</code> in Terminal. For Claude you need an API key from console.anthropic.com.</p>
+<h2>Start at login</h2>
+<p>In Pigeon's Settings, tick “Open Pigeon at login”. It's off until you turn it on. You can also manage it in System Settings → General → Login Items.</p>
+<h2>Something went wrong</h2>
+<p>Pigeon keeps an error log on your Mac. Send it along with your question: open Finder, press ⌘⇧G and go to <code>~/Library/Logs/Pigeon-crash.log</code>.</p>
+<h2>Remove Pigeon's access</h2>
+<p>Remove the account in Pigeon's Settings, and revoke access at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</p>
+</article>
+<footer>
+  <span>© 2026 Tahir Javed</span>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="support.html">Support</a>
+  <span>Gmail is a trademark of Google LLC. Pigeon is not affiliated with Google.</span>
+</footer>
+</div>
+</body>
+</html>

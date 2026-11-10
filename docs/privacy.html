@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Pigeon</title>
+<meta name="description" content="How Pigeon handles your data: it stays on your Mac.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="site.css">
+<!-- Google Search Console verification: paste the <meta name="google-site-verification" ...> tag here -->
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Pigeon</a>
+  <nav><a href="index.html#features">Features</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+</header>
+<article class="doc">
+<h1>Privacy policy</h1>
+<p class="small">Last updated: 10 November 2026</p>
+<p class="box"><b>In short:</b> Pigeon has no servers. Your email goes directly between your Mac and Google. The developer never receives your email, your contacts, your passwords or any information about how you use Pigeon.</p>
+
+<h2>Who we are</h2>
+<p>Pigeon is made by Tahir Javed, Amsterdam, the Netherlands. Contact: <a href="https://github.com/tahirjaved1/pigeon/issues">GitHub Issues</a> (public), or the email address on the GitHub profile linked there for private questions.</p>
+
+<h2>Your email and Google account</h2>
+<p>Pigeon connects from your Mac directly to Google's mail servers (IMAP and SMTP) to show, organise and send your email. When you use <b>Sign in with Google</b>, Google gives Pigeon a sign-in key for your account; when you use an <b>app password</b>, you give it to Pigeon yourself. Either is stored only in the macOS Keychain on your Mac.</p>
+<p>Pigeon requests access to Gmail (<code>https://mail.google.com/</code>) because that is the only access Google allows for IMAP and SMTP, which Pigeon uses to read, search, organise and send your mail. It also reads your email address and name to know which account you signed in with.</p>
+<p>To make Pigeon fast and usable offline, it keeps a copy of your recent mail in a database inside Pigeon's own folder on your Mac. You can turn this off and delete it in Settings → Privacy. Removing an account deletes its copy and its sign-in key.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>Pigeon's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. In particular:</p>
+<ul>
+  <li>Gmail data is used only to provide the email features you see in Pigeon.</li>
+  <li>It is never sold, never used for advertising, and never used to train AI or machine-learning models.</li>
+  <li>No person at Pigeon can read your email: the developer has no access to it at all.</li>
+  <li>It is only transferred to someone else when you ask for it, as described under AI help below.</li>
+</ul>
+
+<h2>AI help (optional, off by default)</h2>
+<p>If you turn on AI help you choose how it runs:</p>
+<ul>
+  <li><b>Ollama</b> runs on your own Mac. Nothing leaves your computer.</li>
+  <li><b>Claude</b> runs at Anthropic, with your own Anthropic API key. Before anything is sent, Pigeon asks your permission and explains what will be sent. Only when you use an AI feature, it sends: the email you are working on (summarise, draft a reply, rewrite, write with AI); parts of your recent sent emails about once a month to learn your writing tone; and senders, subjects and short previews of matching emails when you use Ask Pigeon. This goes directly from your Mac to Anthropic and is covered by <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>; Anthropic does not train its models on API data. You can withdraw permission in Settings → AI help at any time.</li>
+</ul>
+
+<h2>Other connections Pigeon makes</h2>
+<ul>
+  <li><b>Calendars:</b> calendar feed addresses you add are fetched from your Mac.</li>
+  <li><b>Images in emails:</b> remote images are blocked by default. If you load them, the sender's server can see your IP address, as with any email app.</li>
+  <li><b>Unsubscribe:</b> when you unsubscribe, Pigeon contacts the sender's unsubscribe address or web link on your behalf.</li>
+  <li><b>Links</b> you click open in your normal web browser.</li>
+  <li><b>Updates</b> (website version only): Pigeon checks the download site for a newer version. The Mac App Store version is updated by Apple.</li>
+</ul>
+
+<h2>No tracking</h2>
+<p>Pigeon contains no analytics, no advertising and no tracking of any kind. If Pigeon runs into an error, the details are written to a log file on your Mac only (<code>~/Library/Logs/Pigeon-crash.log</code>, or inside Pigeon's container for the App Store version). It is never sent anywhere.</p>
+
+<h2>Your choices and deleting your data</h2>
+<ul>
+  <li>Remove an account in Pigeon's Settings: its sign-in key and local copy are deleted.</li>
+  <li>Revoke Pigeon's access to Google at any time: <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+  <li>Uninstalling Pigeon removes its data folder (App Store version) or you can delete <code>~/Library/Application Support/com.tahirjaved.pigeon</code>.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Pigeon is a general-purpose email app and is not directed at children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published on this page with a new date.</p>
+</article>
+<footer>
+  <span>© 2026 Tahir Javed</span>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="support.html">Support</a>
+  <span>Gmail is a trademark of Google LLC. Pigeon is not affiliated with Google.</span>
+</footer>
+</div>
+</body>
+</html>
