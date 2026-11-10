@@ -17,7 +17,7 @@
 </header>
 <article class="doc">
 <h1>Privacy policy</h1>
-<p class="small">Last updated: 10 November 2026</p>
+<p class="small">Last updated: 10 November 2026 (version 0.7)</p>
 <p class="box"><b>In short:</b> Pigeon has no servers. Your email goes directly between your Mac and Google. The developer never receives your email, your contacts, your passwords or any information about how you use Pigeon.</p>
 
 <h2>Who we are</h2>
@@ -40,6 +40,7 @@
 <h2>AI help (optional, off by default)</h2>
 <p>If you turn on AI help you choose how it runs:</p>
 <ul>
+  <li><b>Apple Intelligence</b> uses Apple's model built into macOS, on your Mac. Nothing leaves your computer.</li>
   <li><b>Ollama</b> runs on your own Mac. Nothing leaves your computer.</li>
   <li><b>Claude</b> runs at Anthropic, with your own Anthropic API key. Before anything is sent, Pigeon asks your permission and explains what will be sent. Only when you use an AI feature, it sends: the email you are working on (summarise, draft a reply, rewrite, write with AI); parts of your recent sent emails about once a month to learn your writing tone; and senders, subjects and short previews of matching emails when you use Ask Pigeon. This goes directly from your Mac to Anthropic and is covered by <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>; Anthropic does not train its models on API data. You can withdraw permission in Settings → AI help at any time.</li>
 </ul>
@@ -52,6 +53,9 @@
   <li><b>Links</b> you click open in your normal web browser.</li>
   <li><b>Updates</b> (website version only): Pigeon checks the download site for a newer version. The Mac App Store version is updated by Apple.</li>
 </ul>
+
+<h2>Privacy report</h2>
+<p>Pigeon counts what it protected you from: the number of trackers found, the names of tracking services, the domains of senders that used them, remote images held back, phishing warnings, unsubscribes and how AI help ran. These counts are stored in a file on your Mac (<code>privacy.json</code> in Pigeon's settings folder) and never sent anywhere. It keeps one year. “Copy summary” copies only the totals, never names, senders or contents.</p>
 
 <h2>No tracking</h2>
 <p>Pigeon contains no analytics, no advertising and no tracking of any kind. If Pigeon runs into an error, the details are written to a log file on your Mac only (<code>~/Library/Logs/Pigeon-crash.log</code>, or inside Pigeon's container for the App Store version). It is never sent anywhere.</p>

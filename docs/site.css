@@ -29,3 +29,27 @@ footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--m
 footer a { color: var(--muted); }
 .hero p.small { font-size: 14px; margin-top: 14px; }
 pre { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; overflow-x: auto; font-size: 15px; }
+.usp { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 0 0 30px; }
+.usp div { border-top: 3px solid var(--accent); padding-top: 12px; }
+.usp h3 { margin: 0 0 4px; font-size: 18px; }
+.usp p { margin: 0; color: var(--muted); font-size: 15px; }
+.flow { width: 100%; height: auto; margin: 10px 0 6px; }
+.fl-h { font-size: 14px; font-weight: 700; fill: var(--text); }
+.fl-t { font-size: 14px; text-anchor: middle; fill: var(--text); }
+.fl-s { font-size: 12px; text-anchor: middle; fill: var(--muted); }
+.fl-box { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.fl-box.accent { stroke: var(--accent); fill: var(--accent-soft); stroke-width: 2; }
+.fl-box.warn { stroke: #d9822b; stroke-dasharray: 5 4; stroke-width: 1.5; }
+.fl-line { stroke: var(--muted); stroke-width: 1.5; fill: none; }
+.fl-line-fill { fill: var(--muted); }
+.tbl { overflow-x: auto; }
+.doc table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 560px; }
+.doc th, .doc td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.doc thead th { font-size: 14px; color: var(--muted); }
+.doc thead th:nth-child(2), .doc td.yes { color: var(--accent); font-weight: 700; }
+.doc tbody th { font-weight: 500; }
+@media (max-width: 560px) {
+  header.top { flex-wrap: wrap; gap: 8px; }
+  nav a { margin: 0 14px 0 0; font-size: 14px; }
+  .fl-t { font-size: 18px; } .fl-h { font-size: 18px; } .fl-s { font-size: 15px; }
+}
